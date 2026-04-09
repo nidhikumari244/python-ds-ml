@@ -1,0 +1,64 @@
+Machine learning (ML) is a subset of artificial intelligence (AI) that enables systems to learn from data, identify patterns, and improve performance over time without explicit programming. Using algorithms and statistical models, it automates decision-making and predictions for tasks like fraud detection, personalized recommendations, and image recognition. 
+IBM
+IBM
+ +3
+This video explains the basics of machine learning and how it's used in daily life:
+Related video thumbnail
+07:52
+
+
+Simplilearn
+YouTube• 19 Sept 2018
+Key Concepts and Types
+Supervised Learning: Algorithms are trained on labeled data to map inputs to known outputs, often for classification or regression.
+Unsupervised Learning: The model analyzes unlabeled data to find hidden structures or patterns, such as clustering customers by behavior.
+Reinforcement Learning: Agents learn to make decisions by performing actions and receiving feedback (rewards or penalties) in an environment.
+Generative AI: A subfield focused on creating new content—such as text, images, or audio—based on patterns learned from existing data. 
+University of California, Berkeley
+University of California, Berkeley
+ +4
+This video provides an introduction to the different types of machine learning:
+Related video thumbnail
+55s
+
+
+freeCodeCamp.org
+YouTube• 26 Sept 2022
+How It Works
+Machine learning relies on training a "model" through an iterative process: 
+Google for Developers
+Google for Developers
+Data Collection & Preprocessing: Gathering large datasets to serve as training material.
+Model Training: Feeding data into algorithms to identify patterns and build the model.
+Evaluation & Optimization: Testing the model against new data and refining it to improve accuracy. 
+Coursera
+Coursera
+ +4
+Common Applications
+Recommendations: Netflix and Amazon use ML to suggest content.
+Computer Vision: Autonomous vehicles and facial recognition systems.
+Natural Language Processing (NLP): Chatbots and translation apps.
+Finance: Detecting fraudulent transactions in real-time. 
+GeeksforGeeks
+GeeksforGeeks
+ +4
+The core goal of machine learning is to build systems that generalize from training data to new, unseen scenarios effectively. 
+IBM
+IBM
+What is Machine Learning?
+Machine learning (ML) is a way to train software, called a model, to make predictions or generate content using data. ML systems c...
+
+Google for Developers
+·
+1:31
+What is Machine Learning? Definition, Types, & Applications - TMU
+In Today's digital world, Machine Learning is one of the most radical technologies. It is known as one of the most common types of...
+
+Teerthanker Mahaveer University
+
+What is Machine Learning? | IBM
+By Dave Bergmann. What is machine learning? Machine learning is the subset of artificial intelligence (AI) focused on algorithms t...
+
+IBM
+
+Show all
