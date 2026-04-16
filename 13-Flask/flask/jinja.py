@@ -1,4 +1,13 @@
-from flask import Flask,render_template,request 
+## building url dynamically
+##variable rule
+## jinja2 template engine
+'''
+{{ }} expression to print output in html
+{%...%} condition , for loop
+{#...#} fro comment 
+# '''
+
+from flask import Flask,render_template,request,redirect,url_for 
 
 # ...
 # It create an instance of the flask class,
@@ -18,12 +27,12 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/submit',methods=['GET','POST'])
-def submit():
-    if request.method=='POST':
-      name=request.form['name']
-      return f'Hello{name}!'  
-    return render_template('form.html')
+# @app.route('/submit',methods=['GET','POST'])
+# def submit():
+#     if request.method=='POST':
+#       name=request.form['name']
+#       return f'Hello{name}!'  
+#     return render_template('form.html')
 
 ## variable rule
 @app.route('/success/<int:score>')
@@ -34,7 +43,50 @@ def success(score):
     else:
         res="f"
 
-    return render_template('result.html', results=res)
+    return render_template('result1.html', results=res)
+
+
+
+
+@app.route('/successres/<int:score>')
+def successres(score):
+    res=""
+    if score>=50:
+        res="pass"
+    else:
+        res="f"
+    exp={'score':score,"res":res}
+
+    return render_template('result1.html', results=exp)
+# if rule
+
+@app.route('/successif/<int:score>')
+def successif(score):
+
+     
+    return render_template('result.html', results=score)
+
+@app.route('/fail/<int:score>')
+def fail(score):
+
+     
+    return render_template('result.html', results=score)
+
+@app.route('/submit', methods=['POST','GET'])
+def submit():
+    total_score=100
+    if request.method=='POST':
+        science=float(request.form['science'])
+        maths=float(request.form['maths'])
+        c=float(request.form['maths'])
+        data_science=float(request.form['datascience'])
+
+        total_score=(science+maths+c+data_science)/4
+    else:
+        return render_template('getresult.html')
+
+    return redirect(url_for('successres', score=total_score))
+
 
 
 
