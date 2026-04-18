@@ -10,5 +10,9 @@ app = Flask(__name__)
 def welcome():
     return "welcome to this flask work.its amazing"
 
+@app.route("/index")
+def welcome():
+    return "welcome to the index page"
+
 if __name__=="__main__":
     app.run(debug=True)
