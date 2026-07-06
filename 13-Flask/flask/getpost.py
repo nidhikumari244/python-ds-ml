@@ -19,7 +19,7 @@ def about():
     return render_template('about.html')
 
 @app.route('/submit',methods=['GET','POST'])
-def form():
+def submit():
     if request.method=='POST':
       name=request.form['name']
       return f'Hello{name}!'  
